@@ -1,1 +1,2 @@
-$("#main").append("Serap Qamar");
+ var firstName="Serap"
+console.log(firstName)
