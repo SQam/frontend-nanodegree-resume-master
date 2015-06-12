@@ -17,8 +17,12 @@ var bio={"name" : "Serap Qamar",
 
  var formattedemail= HTMLcontactGeneric.replace("%contact%", "email").replace("%data%", bio.contacts.email )
  var formattedlocation=HTMLcontactGeneric.replace("%contact%", "location").replace("%data%", bio.contacts.location )
- var pic=HTMLbioPic.replace("%data%", bio.biopic) 	
+ var pic=HTMLbioPic.replace("%data%", bio.biopic)
+ var formattedskills= HTMLskills.replace("%data%", bio.skills) 	
+
  
+ $("#header").prepend(formattedskills)
+ $("#header").prepend(HTMLskillsStart)
  $("#header").prepend(pic)
  $("#header").prepend(formattedlocation);
  $("#header").prepend(formattedemail);
